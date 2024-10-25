@@ -1,0 +1,22 @@
+body{
+    background: aquamarine;
+
+}
+.general-1{
+    background: #aaa;
+    width: 250px;
+    height: 600px;
+    position: relative;
+    left: 50px;
+}
+.quienes{
+    width: 700px;
+}
+.contenedor{
+    width: 800px;
+    height: 700px;
+    position: relative;
+    margin: -550px 570px 350px;
+    margin-left: 770px;
+
+}

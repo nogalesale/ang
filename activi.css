@@ -1,0 +1,14 @@
+body{
+    background-image: url(images/logo\ champa.jpeg);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.general-4 {
+    width: 800px;
+    height: 400px;
+    background: #aaa;
+    position: relative;
+    left: 300px;
+}
