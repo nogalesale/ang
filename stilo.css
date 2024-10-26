@@ -26,3 +26,6 @@ div.pie{
     text-shadow: 2px 2px 5px purple;
     padding: 10px;
 }
+body{
+    background: rgb(149, 148, 148);
+}

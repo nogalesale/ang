@@ -4,19 +4,21 @@ body{
 }
 .general-1{
     background: #aaa;
-    width: 250px;
+    width: 30%;
     height: 600px;
     position: relative;
     left: 50px;
 }
 .quienes{
-    width: 700px;
+    width: 60%;
+    
+
 }
 .contenedor{
-    width: 800px;
+    width: 80%;
     height: 700px;
     position: relative;
     margin: -550px 570px 350px;
-    margin-left: 770px;
+    margin-left: 40%;
 
 }

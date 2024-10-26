@@ -5,10 +5,14 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
+.contenedor3{
+    width: 100%;
+
+}
 .general-4 {
-    width: 800px;
-    height: 400px;
+    width: 80%;
+    height: 40%;
     background: #aaa;
     position: relative;
-    left: 300px;
+    left: 80px;
 }
