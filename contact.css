@@ -1,0 +1,55 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Color de fondo suave */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor Principal */
+.container {
+    text-align: center;
+}
+
+/* Header */
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #007bff; /* Color azul para el título */
+}
+
+/* Sección de Botones */
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaciado entre los botones */
+}
+
+/* Estilo de los Botones */
+.contact-button {
+    background-color: #28a745; /* Verde */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.contact-button:hover {
+    background-color: #218838; /* Verde oscuro al pasar el ratón */
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
