@@ -1,24 +1,66 @@
-body{
-    background: aquamarine;
 
+/* Reset CSS */
+* {
+    background: rgb(214, 185, 190);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.general-1{
-    background: #aaa;
-    width: 30%;
-    height: 600px;
-    position: relative;
-    left: 50px;
-}
-.quienes{
-    width: 60%;
-    
 
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
 }
-.contenedor{
-    width: 80%;
-    height: 700px;
-    position: relative;
-    margin: -550px 570px 350px;
-    margin-left: 40%;
 
+/* Contenedor principal */
+.contenedor {
+    max-width: 800px; /* Ancho máximo para el contenedor */
+    margin: 20px auto; /* Centra el contenedor */
+    background: white; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilos para el título */
+.general-1 {
+    text-align: center; /* Centrar texto */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.general-1 h3 {
+    font-size: 2em; /* Tamaño de fuente grande */
+    color: #007bff; /* Color azul */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilos para el texto */
+.general-1 p {
+    font-size: 1.1em; /* Tamaño de fuente ligeramente más grande */
+    line-height: 1.5; /* Interlineado */
+    color: #555; /* Color del texto */
+    padding: 0 10px; /* Espaciado lateral */
+}
+
+/* Imagen */
+.quienes {
+    max-width: 100%; /* Imagen responsiva */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-top: 20px; /* Margen superior */
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .general-1 h3 {
+        font-size: 1.5em; /* Tamaño de fuente más pequeño en móviles */
+    }
+
+    .general-1 p {
+        font-size: 1em; /* Tamaño de texto más pequeño en móviles */
+    }
 }
