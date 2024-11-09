@@ -209,18 +209,18 @@ iframe {
 }
 .simosi {
     display: flex;
-    flex-direction: column; /* Para que el título esté arriba */
+    flex-direction: column;
     align-items: center;
-    background-color: #e6f7ff; /* Fondo celeste suave */
+    background-color: #e6f7ff;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
-    color: #004a73; /* Color de texto azul oscuro */
+    color: #004a73;
 }
 
 .simosi h2 {
-    color: #007acc; /* Color azul claro para el título */
+    color: #007acc;
     font-size: 1.8em;
     margin-bottom: 20px;
     text-align: center;
@@ -228,19 +228,23 @@ iframe {
 
 .simosi-content {
     display: flex;
-    align-items: flex-start; /* Para alinear la imagen y el texto en la misma fila */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+    align-items: flex-start;
+    gap: 20px; /* Espacio entre elementos */
 }
 
 .simosi img {
-    width: 200px; /* Ajusta el tamaño de la imagen */
+    width: 200px;
     height: auto;
     border-radius: 10px;
-    margin-right: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Espacio inferior para la vista móvil */
 }
 
 .simosi-text {
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
 }
 
 .simosi-text p {
@@ -248,9 +252,9 @@ iframe {
     line-height: 1.6;
     margin-bottom: 15px;
     padding: 10px;
-    border: 1px solid #b3d7e8; /* Borde alrededor de los párrafos */
+    border: 1px solid #b3d7e8;
     border-radius: 5px;
-    background-color: #ffffff; /* Fondo blanco para cada párrafo */
+    background-color: #ffffff;
 }
 
 .simosi-text p:first-of-type {
@@ -258,5 +262,22 @@ iframe {
 }
 
 .simosi-text p:last-of-type {
-    margin-bottom: 0; /* Para eliminar el margen inferior del último párrafo */
+    margin-bottom: 0;
 }
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .simosi-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .simosi img {
+        margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
+    }
+
+    .simosi-text {
+        max-width: 100%; /* Para que ocupe todo el ancho disponible */
+    }
+}
+

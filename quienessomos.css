@@ -45,8 +45,30 @@ body {
     line-height: 1.5;
     color: #555;
     padding: 10px 350px;
-    text-align: justify; /* Justifica el texto a ambos lados */
+    text-align: justify;
 }
+
+/* Para pantallas medianas (tablets y dispositivos similares) */
+@media (max-width: 1024px) {
+    .general-1 p {
+        padding: 10px 200px; /* Reduce el padding lateral */
+    }
+}
+
+/* Para pantallas pequeñas (smartphones) */
+@media (max-width: 768px) {
+    .general-1 p {
+        padding: 10px 50px; /* Reduce aún más el padding para móviles */
+    }
+}
+
+/* Para pantallas extra pequeñas (teléfonos de menor tamaño) */
+@media (max-width: 480px) {
+    .general-1 p {
+        padding: 10px 20px; /* Mínimo padding en los laterales */
+    }
+}
+
 
 /* Imagen */
 .quienes {
