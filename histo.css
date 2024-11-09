@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Fondo claro */
+    color: #343a40; /* Texto oscuro */
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.contenedor1 {
+    max-width: 900px; /* Ancho máximo para el contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    background: white; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Título de historia */
+.historia-1 {
+    text-align: center; /* Centrar texto */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.historia-1 h3 {
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    color: #007bff; /* Color azul */
+    margin-bottom: 15px; /* Margen inferior */
+}
+
+/* Estilos para el texto */
+.historia-1 p {
+    font-size: 1.1em; /* Tamaño de fuente ligeramente más grande */
+    line-height: 1.5; /* Interlineado */
+    color: #495057; /* Color del texto */
+    padding: 0 10px; /* Espaciado lateral */
+    margin-bottom: 20px;
+    text-align: justify; /* Margen inferior */
+}
+
+/* Imágenes */
+.imagen-4 {
+    max-width: 100%; /* Imágenes responsivas */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 10px 0; /* Margen superior e inferior */
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .historia-1 h3 {
+        font-size: 2em; /* Tamaño de fuente más pequeño en móviles */
+    }
+
+    .historia-1 p {
+        font-size: 1em; /* Tamaño de texto más pequeño en móviles */
+    }
+}
+/* Botón */
+.btn {
+    display: inline-block;
+    background-color: #007acc;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #005a99;
+}

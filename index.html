@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+
+            <div class="menu container">
+                <a href="" class="logo"><img src="" alt=""></a>
+                
+                <label for="menu">
+                    <img src="" class="menu-icono" alt="">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <button><a class="simone" href="quienessomos.html">QUIENES SOMOS</a></button>
+                        <button><a href="historia.html">HISTORIA</a></button>
+                        <button><a href="marcel.html">MARCELINO CH.</a></button>
+                        <button><a href="actividad.html">ACTIVIDADES</a></button>
+                        <button><a href="imagenes.html">GALERIA</a></button>
+                        
+                        <button><a href="contac.html">ATENCION</a></button>
+                    </ul>
+                </nav>
+    
+            </div>
+    
+            <div class="header-content container">
+                <h1>SITIO WEB INFORMATIVO DE LA UNIDAD EDUCATIVA MARCELINO CHAMPAGNAT II</h1>
+                <p></p>
+                <img class="marce" src="images/marcelino.jpeg">
+                
+                
+            </div>
+        </header>
+        <div>
+            <p class="tissi"> Somos un centro educativo de convenio con la Iglesia Católica bajo la administración de la congregación Hermanos Maristas de la Enseñanza, cuyo objetivo es formar buenos cristianos para ser honrados ciudadanos.
+                Les invitamos a entrar en la página virtual de nuestro colegio para conocer su identidad, valores y carisma que lo caracterizan.
+            </p>
+            
+        </div>
+        <div class="simosi">
+            <h2>3 Violetas</h2>
+            <div class="simosi-content">
+                <img src="images/3 violetas.jpeg" alt="3 violetas">
+                <div class="simosi-text">
+                    <p>Las tres violetas son un símbolo marista que representan las virtudes de la sencillez, la humildad y la modestia. Estas virtudes fueron transmitidas por Marcelino Champagnat, sacerdote francés fundador de la congregación de los Hermanos Maristas. La violeta es una flor que también puede significar inocencia, fe, inspiración, pasión espiritual, profusión y soberanía.</p>
+                    <p>La primera de las tres violetas significa: SENCILLEZ … la sencillez que se manifiesta en el trato a los demás, a través de una relación auténtica y directa. Ser honestos con nosotros mismos y con Dios.</p>
+                    <p>La segunda: HUMILDAD … humildad para aceptar las cualidades con las que nacemos. Ser humildes es dejar hacer y dejar ser.</p>
+                    <p>La tercera de las violetas significa: MODESTIA…que quiere decir, moderación, control de uno mismo. La modestia nos invita a que ser personas equilibradas, dueños de vuestros propios actos, jóvenes que seáis capaces de llevar las riendas de vuestra vida, encaminándola con total acierto hacia el futuro.</p>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <section class="info-2">
+    
+            
+    
+            <div class="info-content container">
+                <h2>Informacion</h2>
+    
+                <div class="info-circle">
+                    <div class="circle-txt">
+                        <div class="circle-1">
+                            <li><a href="https://www.instagram.com/simoneardayap?igsh=cjZ6djFzcDAwajkw">
+                                <img src="ico/insta.ico" alt="instagram">
+                            </a></li>
+                        </div>
+                        <p>
+                            Estudiante de la promocion 2024.
+                        </p>
+    
+                    </div>
+                    <div class="circle-txt"></div>
+                        <div class="circle-1">
+                            <li><a href="https://www.instagram.com/tissianyp?igsh=MWMzcnU4eDZ4NXN0aQ==">
+                                <img src="ico/insta.ico" alt="instagram">
+                            </a></li>
+                        </div>
+                        <p>
+                            Estudiante de la promocion 2024.
+                        </p>
+    
+                    </div>
+    
+                    <div class="circle-txt"></div>
+                        <div class="circle-1">
+                            <li><a href="https://www.facebook.com/share/AStVrEMVqsFJiSCi/">
+                                <img src="ico/face.ico" alt="facebook">
+                            </a></li>
+                        </div>
+                        <p>
+                            Pagina oficial de facebook.
+                        </p>
+    
+                    </div>
+    
+                    
+    
+                </div>    
+            </div>
+        </section>
+        
+        
+        <section class="comentarios">
+            <h2>Comentarios</h2>
+            <form class="comentarios-form" id="comentariosForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" name="comentario" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-comentario">Enviar Comentario</button>
+            </form>
+            <!-- Elemento para mostrar el mensaje de confirmación -->
+            <p id="mensajeConfirmacion" style="display: none; color: green; font-weight: bold;">Comentario enviado y guardado.</p>
+        </section>
+        
+        <script>
+            // Seleccionar el formulario y el mensaje de confirmación
+            const formulario = document.getElementById('comentariosForm');
+            const mensajeConfirmacion = document.getElementById('mensajeConfirmacion');
+        
+            // Evento de envío del formulario
+            formulario.addEventListener('submit', function(event) {
+                event.preventDefault(); // Evitar el envío real del formulario
+        
+                // Mostrar el mensaje de confirmación
+                mensajeConfirmacion.style.display = 'block';
+        
+                // Restablecer el formulario
+                formulario.reset();
+        
+                // Ocultar el mensaje después de 3 segundos
+                setTimeout(() => {
+                    mensajeConfirmacion.style.display = 'none';
+                }, 3000);
+            });
+        </script>
+        
+        
+       
+       
+        
+
+
+
+
+
+
+    </body>
+</html>

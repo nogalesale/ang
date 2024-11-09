@@ -1,0 +1,78 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Contenedor General */
+.general-1 {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.general-1 h3 {
+    text-align: center;
+    color: #007bff; /* Color azul */
+    margin-bottom: 15px;
+}
+
+.general-1 p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: justify; /* Justificar texto */
+}
+
+/* Contenedor de la Imagen */
+.contenedor {
+    display: flex;
+    justify-content: center; /* Centrar la imagen */
+    margin: 20px 0;
+}
+
+.quienes {
+    max-width: 100%; /* Hacer que la imagen sea responsiva */
+    height: auto; /* Mantener la proporción */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de Enlaces */
+a {
+    color: #007bff; /* Color azul */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3; /* Color más oscuro al pasar el ratón */
+}
+/* Botón */
+.btn {
+    display: inline-block;
+    background-color: #007acc;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #005a99;
+}

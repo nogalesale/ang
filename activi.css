@@ -1,0 +1,86 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7ff; /* Fondo azul claro */
+    color: #333;
+    padding: 20px;
+}
+
+/* Wrapper para las actividades */
+.wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 15px;
+    border: 2px solid #b3e5fc; /* Borde azul claro */
+}
+
+/* Imagen */
+.wrapper img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+    object-fit: cover;
+    border: 2px solid #81d4fa; /* Borde azul más oscuro para destacar la imagen */
+}
+
+/* Caja de texto */
+.text-box {
+    max-width: 800px;
+}
+
+.text-box h2 {
+    color: #0277bd; /* Azul oscuro */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.text-box p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e1f5fe; /* Fondo azul muy claro para el texto */
+    border-left: 4px solid #039be5; /* Borde izquierdo para destacar el texto */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .wrapper img {
+        margin: 0 0 15px 0;
+    }
+}
+/* Botón */
+.btn {
+    display: inline-block;
+    background-color: #007acc;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #005a99;
+}
